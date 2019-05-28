@@ -1,14 +1,15 @@
-def solution(n)
-    a=[]
-    n.to_s.each_char do |c|
-        a.push(c.to_i)
+def solution(number)
+    arr = []
+    str = ""
+
+    number.to_s.each_char do |item|
+      arr << item
     end
-    a.sort!{|a,b| b<=>a}
-    s=""
-    a.each do |i|
-        s+=i.to_s
-    end
-    s.to_i
+
+    arr.sort! { |a,b| b <=> a }
+    arr.each { |item| str << item }
+
+    str
 end
 
 puts solution(453)
