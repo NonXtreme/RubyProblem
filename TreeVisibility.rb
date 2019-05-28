@@ -8,7 +8,7 @@ end
 
 def countVisible(t, m)
     if t.nil?
-      0
+      return 0
     end
 
     t_m = m
